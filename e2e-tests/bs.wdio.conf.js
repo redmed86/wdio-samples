@@ -50,8 +50,8 @@ exports.config = {
   maxInstances: 10,
   //
   // If you have trouble getting all important capabilities together, check out the
-  // Sauce Labs platform configurator - a great tool to configure your capabilities:
-  // https://docs.saucelabs.com/reference/platforms-configurator
+  // Browserstack capabilities generator - a great tool to configure your capabilities:
+  // https://www.browserstack.com/automate/capabilities
   //
   capabilities: [
     {
@@ -63,6 +63,64 @@ exports.config = {
       "browserstack.console": "errors",
       "browserstack.local": true,
       name: "Angular Sample - Testing Localhost on Browserstack",
+      build: "Browserstack WDIO Demo",
+      project: "Browserstack WDIO Demo Project"
+    },
+    {
+      browser: "Firefox",
+      browserVersion: "latest",
+      os: "Windows",
+      os_version: "10",
+      "browserstack.networkLogs": true,
+      "browserstack.console": "errors",
+      "browserstack.local": true,
+      name: "Angular Sample - Testing Localhost on Browserstack",
+      build: "Browserstack WDIO Demo",
+      project: "Browserstack WDIO Demo Project"
+    },
+    {
+      browser: "edge",
+      browserVersion: "latest",
+      os: "Windows",
+      os_version: "10",
+      "browserstack.networkLogs": true,
+      "browserstack.console": "errors",
+      "browserstack.local": true,
+      name: "Angular Sample - Testing Localhost on Browserstack",
+      build: "Browserstack WDIO Demo",
+      project: "Browserstack WDIO Demo Project"
+    },
+    {
+      browser: "ie",
+      browserVersion: "11",
+      os: "Windows",
+      os_version: "10",
+      "browserstack.networkLogs": true,
+      "browserstack.console": "errors",
+      "browserstack.local": true,
+      name: "Angular Sample - Testing Localhost on Browserstack",
+      build: "Browserstack WDIO Demo",
+      project: "Browserstack WDIO Demo Project"
+    },
+    {
+      device: "iPhone XS",
+      real_mobile: true,
+      os_version: "13",
+      "browserstack.networkLogs": true,
+      "browserstack.console": "errors",
+      "browserstack.local": true,
+      name: "Angular Sample - Testing Localhost on Browserstack Apple Device",
+      build: "Browserstack WDIO Demo",
+      project: "Browserstack WDIO Demo Project"
+    },
+    {
+      device: "Samsung Galaxy S21",
+      real_mobile: true,
+      os_version: "11.0",
+      "browserstack.networkLogs": true,
+      "browserstack.console": "errors",
+      "browserstack.local": true,
+      name: "Angular Sample - Testing Localhost on Browserstack Android Device",
       build: "Browserstack WDIO Demo",
       project: "Browserstack WDIO Demo Project"
     }
